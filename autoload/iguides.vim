@@ -50,7 +50,7 @@ function! PrevNonBlankLine(lnum)
       return current
     endif
 
-    let current -=1
+let current -=1
 
   endwhile
 
@@ -199,7 +199,7 @@ function Colorify()
 
 endfunction
 
-function iguides#StartGuides()
+function iguides#start_guides()
   echom "Hello World"
   " IndentGuidesDisable
   call Colorify()
