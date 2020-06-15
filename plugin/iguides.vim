@@ -6,7 +6,7 @@ augroup i_guides
   "   autocmd VimEnter * :IndentGuidesEnable
   " endif
 
-  autocmd BufEnter,WinEnter,FileType * if &ft != 'netrw' || &ft != 'startify' | call iguides#start_guides() | endif
+  autocmd BufEnter,WinEnter,FileType * if &ft != 'netrw' && &ft != 'startify' | call iguides#start_guides() | endif
 
   " Trigger BufEnter and process modelines.
   autocmd ColorScheme * doautocmd i_guides BufEnter
