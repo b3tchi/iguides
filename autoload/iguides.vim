@@ -1,7 +1,7 @@
 echom "starting Config"
 
-setlocal foldmethod=expr
-setlocal foldexpr=GetPotionFold(v:lnum)
+set foldmethod=expr
+set foldexpr=GetPotionFold(v:lnum)
 
 function! GetPotionFold(lnum)
 
