@@ -6,7 +6,7 @@ augroup i_guides
   "   autocmd VimEnter * :IndentGuidesEnable
   " endif
 
-  let avoid = ['netrw', 'startify', 'help']
+  let avoid = ['netrw', 'startify', 'help', 'coc-explorer']
 
   autocmd FileType * if index(avoid, &ft) == -1 | call iguides#start_guides() | endif
   " autocmd BufEnter,WinEnter,FileType * if &ft != 'netrw' && &ft != 'startify' | call iguides#start_guides() | endif
