@@ -1,4 +1,4 @@
-echom "starting Config"
+"echom "starting Config"
 
 set foldmethod=expr
 set foldexpr=GetPotionFold(v:lnum)
@@ -200,11 +200,11 @@ function Colorify()
 endfunction
 
 function iguides#start_guides()
-  echom "Hello World"
+  " echom "Hello World"
   " IndentGuidesDisable
   call Colorify()
   call IndentLinesEnableb3()
   call PrettyIndent()
 endfunction
 
-echom "Loaded Config"
+" echom "Loaded Config"
